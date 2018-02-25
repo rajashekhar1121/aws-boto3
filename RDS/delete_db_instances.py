@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 import boto3
-db = sys.argv[0]
+db = sys.argv[1]
 rds = boto3.client('rds')
 try:
     response = rds.delete_db_instance(
